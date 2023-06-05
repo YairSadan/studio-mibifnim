@@ -10,6 +10,7 @@ function sendEmail(event) {
   // these IDs from the previous steps
   emailjs.sendForm("service_vzdy9yj", "template_xety1he", this).then(
     function () {
+            window.alert("הפרטים נשלחו בהצלחה!");
       console.log("SUCCESS!");
     },
     function (error) {
